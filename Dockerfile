@@ -1,6 +1,6 @@
 FROM openjdk:7-jdk-alpine
 
-RUN apk add --no-cache curl tar bash 
+RUN apk add --no-cache git tar bash 
 
 #ARG MAVEN_VERSION=3.3.9
 #ARG USER_HOME_DIR="/root"
@@ -11,7 +11,7 @@ RUN apk add --no-cache curl tar bash
 #  && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn \
 
 RUN mkdir /opt \
-  && git clone https://github.com/jfsc/spring-petclinic.git  /opt/petclinc \
+  && git clone https://github.com/jfsc/spring-petclinic.git  /opt/petclinic \
   && cd / 
 
 #ENV MAVEN_HOME /usr/share/maven
