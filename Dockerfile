@@ -25,4 +25,4 @@ RUN mkdir /opt \
 
 WORKDIR /opt/petclinic
 
-CMD ["mvnw","spring-boot:run"]
+CMD ["/opt/petclinic/mvnw","spring-boot:run"]
