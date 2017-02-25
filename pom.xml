@@ -13,7 +13,7 @@
     <version>1.5.1.RELEASE</version>
   </parent>
   <name>petclinic</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
   <properties>
 
     <!-- Generic properties -->
