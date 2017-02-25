@@ -2,7 +2,7 @@ FROM openjdk:8-jre
 
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
-RUN mkdir -p "$CATALINA_HOME"
+RUN mkdir -p "$CATALINA_HOME/webapps"
 COPY target/spring-petclinic-1.5.1.war $CATALINA_HOME/webapps
 WORKDIR $CATALINA_HOME
 
