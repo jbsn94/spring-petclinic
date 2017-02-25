@@ -2,7 +2,7 @@ FROM openjdk:8-jre
 
 ENV SERVICE_HOME /usr/local/services
 RUN mkdir -p "$SERVICE_HOME/"
-COPY target $SERVICE_HOME
+COPY target/* $SERVICE_HOME
 WORKDIR $SERVICE_HOME
 
 EXPOSE 8080
